@@ -393,7 +393,7 @@ class _CalendarState extends State<CalendarCarousel> {
                                       : defaultTextStyle,
                               child: Text(
                                 '${now.day}',
-                                style: (widget.weekends.contains(index % 7)) &&
+                                style: (widget.weekends.contains(WeekDay.values[index % 7])) &&
                                         !isSelectedDay &&
                                         !isToday
                                     ? widget.weekendTextStyle
