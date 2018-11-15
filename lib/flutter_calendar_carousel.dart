@@ -659,9 +659,6 @@ class _CalendarState extends State<CalendarCarousel> {
       _controller.animateToPage(page,
           duration: Duration(milliseconds: 1), curve: Threshold(0.0));
     }
-
-    print('startWeekDay: $_startWeekday');
-    print('endWeekDay: $_endWeekday');
   }
 
   List<Widget> _renderWeekDays() {
